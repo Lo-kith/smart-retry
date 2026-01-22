@@ -1,4 +1,4 @@
-async function smartRetry(fn, { maxRetries = 3, delay = 1000 }) {
+async function smartRetry(fn, { maxRetries = 15, delay = 1000 }) {
   let lastError;
 
   for (let attempt = 0; attempt < maxRetries; attempt++) {
